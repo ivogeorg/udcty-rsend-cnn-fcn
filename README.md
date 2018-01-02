@@ -10,10 +10,10 @@ Introduced by Long and Shelhamer (Berkeley) | [CVPR'15](https://people.eecs.berk
 
 The correct use is `tf.layers.conv2d(x, num_outputs, 1, 1, weights_initializer=custom_init)`.
 
-    * `num_outputs` defines the number of output channels or kernels
-    * The third argument is the kernel size, which is 1.
-    * The fourth argument is the stride, we set this to 1.
-    * Use a custom initializer so the weights in the dense and convolutional layers are identical.
+  * `num_outputs` defines the number of output channels or kernels
+  * The third argument is the kernel size, which is 1.
+  * The fourth argument is the stride, we set this to 1.
+  * Use a custom initializer so the weights in the dense and convolutional layers are identical.
 
 This results in the a _matrix multiplication_ operation that _preserves spatial information_.
 
