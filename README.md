@@ -8,7 +8,7 @@ Introduced by Long and Shelhamer (Berkeley) | [CVPR'15](https://people.eecs.berk
 
 ### File `dense_to_1x1`
 
-The correct use is t`f.layers.conv2d(x, num_outputs, 1, 1, weights_initializer=custom_init)`.
+The correct use is `tf.layers.conv2d(x, num_outputs, 1, 1, weights_initializer=custom_init)`.
 
     * `num_outputs` defines the number of output channels or kernels
     * The third argument is the kernel size, which is 1.
